@@ -465,6 +465,7 @@ img {
   display: flex;
   align-items: baseline;
   gap: 120px;
+  position: relative;
 }
 
 .footer-info {
@@ -535,11 +536,13 @@ img {
   background-color: #31d0aa;
 }
 
-.subscribe-form {
+.mail-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.form-label {
-  font-family: "Roboto", sans-serif;
+.mail-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -547,7 +550,28 @@ img {
   color: #fff;
 }
 
-input::placeholder {
+.subscribe-form {
+  display: flex;
+  position: absolute;
+  right: 0;
+  gap:;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.input-subscribe::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -556,7 +580,7 @@ input::placeholder {
   color: #fff;
 }
 
-input {
+.input-subscribe {
   border: 1px solid #fff;
   border-radius: 4px;
   width: 264px;
@@ -565,13 +589,14 @@ input {
   background-color: rgba(0, 0, 0, 0);
 }
 
-input:hover,
-input:focus {
+.input-subscribe:hover,
+.input-subscribe:focus {
   border: 1px solid #31d0aa;
   border-radius: 4px;
-  width: 264px;
-  height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.icon-send {
 }
 
 .form-button {
@@ -618,6 +643,10 @@ input:focus {
 
 .modal {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   left: 50%;
   top: 50%;
   width: 480px;
@@ -669,18 +698,50 @@ input:focus {
   fill: #fff;
 }
 
-/* .input-username {
-  position: relative;
-} */
-
-.contacts-form {
-  display: flex;
-  flex-direction: column;
+.input-username {
+  padding-left: 38px;
 }
 
-. .icon-person {
-  /* position: absolute; */
-  top: 13px;
-  left: 19px;
+.form-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+.icon-person {
+  position: absolute;
+  top: 50%;
+  left: 16px;
   fill: #2e2f42;
+  transform: translateY(-50%);
+}
+
+.username-wrapper {
+  position: relative;
+  /* margin-top: 4px; */
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 8px;
+  /* padding: 24px 0; */
+}
+
+.label-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-field {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
 }

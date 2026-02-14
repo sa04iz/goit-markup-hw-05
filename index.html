@@ -586,18 +586,23 @@
             </li>
           </ul>
         </div>
-      
+        <div class="mail-form">
+      <p class="mail-text">Subscribe</p>
       <form class="subscribe-form" name="subscribe_form" autocomplete="off">
-        <div class="form-field">
-          <label class="form-label" for="email"> Subscribe</label>
-          <div class="input-wrapper">
-            <input type="email" id="email" name="email" placeholder="E-mail" />
+        <div class="input-wrapper">
+          <label class="form-label" for="email"></label>
+          
+            <input class="input-subscribe" type="email" id="email" name="email" placeholder="E-mail" />
 
             <button class="form-button" type="submit">Subscribe</button>
-          </div>
+            <svg class="icon-send" width="24px" height="20px">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          
         </div>
         
       </form>
+        </div>
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
@@ -609,21 +614,27 @@
         </svg>
       
       </button>
-      <form class="contacts-form">
-      <label class="username">
+      <p class="form-title">Leave your contacts and we will call you back</p>
+      <form>
+        <div class="contacts">
+
+        <div class="wrapper-field">
+      <label class="label-field" for="username">
         Name
+        <div class="username-wrapper">
         <svg  class="icon-person" width="12" height="12">
           <use href="./images/icons.svg#icon-person"></use>
         </svg>
-        <input class="input-username" type="name" name="username">
-        
+        <input class="input-field" type="text" name="username" id="username">
+        </div>
       </label>
-      <label>
-        Phone
-        <input type="tel" naem="phone">
-      </label>
-      </form>
       </div>
-    </div>
+      <label class="label-field">
+        Phone
+        <input class="input-field" type="tel" name="phone">
+      </label>
+      </div>
+      </form>
+      
   </body>
 </html>
