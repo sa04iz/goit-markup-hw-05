@@ -589,17 +589,17 @@
         <div class="mail-form">
       <p class="mail-text">Subscribe</p>
       <form class="subscribe-form" name="subscribe_form" autocomplete="off">
-        <div class="input-wrapper">
+        
           <label class="form-label" for="email"></label>
           
             <input class="input-subscribe" type="email" id="email" name="email" placeholder="E-mail" />
 
-            <button class="form-button" type="submit">Subscribe</button>
+            <button class="form-button" type="submit">Subscribe
             <svg class="icon-send" width="24px" height="20px">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
-          
-        </div>
+          </button>
+       
         
       </form>
         </div>
@@ -621,19 +621,52 @@
         <div class="wrapper-field">
       <label class="label-field" for="username">
         Name
-        <div class="username-wrapper">
-        <svg  class="icon-person" width="12" height="12">
+        <div class="icon-wrapper">
+        <svg  class="form-icon" width="12" height="12">
           <use href="./images/icons.svg#icon-person"></use>
         </svg>
         <input class="input-field" type="text" name="username" id="username">
         </div>
       </label>
       </div>
-      <label class="label-field">
+      <label class="label-field" for="phonenumber">
         Phone
-        <input class="input-field" type="tel" name="phone">
-      </label>
+         <div class="icon-wrapper">
+        <svg class="form-icon" width="13" height="13">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+        <input class="input-field" type="tel" name="contact-number" id="phonenumber">
       </div>
+      
+    </label>
+    <label class="label-field" for="mail">
+    Email
+      <div class="icon-wrapper">
+        <svg class="form-icon" width="15" height="12">
+          <use href="./images/icons.svg#icon-mail"></use>
+        </svg>
+        <input class="input-field" type="email" name="email" id="mail">
+      </div>
+    </label>
+<label class="label-field">
+    Comment
+    <textarea name="comment" rows="10" placeholder="Text input"></textarea>
+ 
+  </label>
+<label >
+  
+    <input  type="checkbox" name="accept" value="Privacy Policy" />
+    <span class="accept-image">
+      <svg class="check-icon" width="10" height="8">
+      <use href="./images/icons.svg#icon-accept"></use>
+    </svg>
+    </span>
+      <span class="checkbox-text">I accept the terms and conditions of the <a class="checkbox-link " href="">Privacy Policy</a>
+    </span>
+  </label>
+  <button class="button-send" type="submit">Send</button>
+  
+  </div>
       </form>
       
   </body>
