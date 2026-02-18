@@ -797,6 +797,8 @@ img {
   height: 120px;
   resize: none;
   margin-bottom: 8px;
+  padding-left: 16px;
+  padding-top: 8px;
 }
 
 .checkbox-text {
