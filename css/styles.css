@@ -586,6 +586,7 @@ img {
   margin-right: 24px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 16px;
+  outline: none;
 }
 
 .input-subscribe:hover,
@@ -671,7 +672,6 @@ img {
   background-color: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
-  padding: 0;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -704,6 +704,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover svg,
@@ -732,7 +733,9 @@ img {
   left: 16px;
   fill: #2e2f42;
   transform: translateY(-50%);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icon:hover,
@@ -762,11 +765,13 @@ img {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  background-color: transparent;
 }
 
 .input-field {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   width: 360px;
   height: 40px;
   padding-left: 38px;
@@ -789,13 +794,16 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 120px;
+  resize: none;
+  margin-bottom: 8px;
 }
 
 .checkbox-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   color: #8e8f99;
   /* padding-left: 8px; */
