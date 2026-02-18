@@ -672,6 +672,7 @@ img {
   background-color: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
+  padding: 24px;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -712,10 +713,6 @@ img {
   fill: #fff;
 }
 
-.input-username {
-  padding-left: 38px;
-}
-
 .form-title {
   font-weight: 500;
   font-size: 16px;
@@ -724,7 +721,7 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-  margin-top: 72px;
+  margin-top: 48px;
 }
 
 .form-icon {
@@ -772,10 +769,11 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  width: 360px;
+  width: 100%;
   height: 40px;
   padding-left: 38px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .icon-wrapper:hover .input-field,
@@ -799,6 +797,7 @@ img {
   margin-bottom: 8px;
   padding-left: 16px;
   padding-top: 8px;
+  outline: none;
 }
 
 .checkbox-text {
@@ -864,6 +863,6 @@ input[type="checkbox"]:checked + .accept-image .check-icon {
 }
 
 .button-send {
-  margin: 24px auto;
+  margin-top: 24px;
   padding: 0;
 }
