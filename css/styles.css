@@ -796,7 +796,7 @@ img {
 }
 
 .privacy-label {
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .checkbox-text {
@@ -862,6 +862,6 @@ input[type="checkbox"]:checked + .accept-image .check-icon {
 }
 
 .button-send {
-  margin-top: 16px;
+  margin-top: 24px;
   padding: 0;
 }
