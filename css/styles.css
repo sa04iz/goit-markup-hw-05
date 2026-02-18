@@ -655,10 +655,6 @@ img {
 
 .modal {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   left: 50%;
   top: 50%;
   width: 408px;
@@ -672,7 +668,7 @@ img {
   background-color: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -721,7 +717,6 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-  margin-top: 48px;
 }
 
 .form-icon {
@@ -794,10 +789,14 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 120px;
   resize: none;
-  margin-bottom: 8px;
+
   padding-left: 16px;
   padding-top: 8px;
   outline: none;
+}
+
+.privacy-label {
+  margin-top: 8px;
 }
 
 .checkbox-text {
@@ -848,7 +847,6 @@ img {
 }
 
 .check-icon {
-  fill: #000000;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -856,6 +854,7 @@ img {
 input[type="checkbox"]:checked + .accept-image {
   background-color: #404bbf;
   border: 1px solid #404bbf;
+  fill: #f4f4fd;
 }
 
 input[type="checkbox"]:checked + .accept-image .check-icon {
@@ -863,6 +862,6 @@ input[type="checkbox"]:checked + .accept-image .check-icon {
 }
 
 .button-send {
-  margin-top: 24px;
+  margin-top: 16px;
   padding: 0;
 }
