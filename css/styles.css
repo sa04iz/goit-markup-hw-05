@@ -477,7 +477,7 @@ img {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  /* gap: 16px; */
+  gap: 16px;
 
   margin-right: 120px;
 }
@@ -599,15 +599,11 @@ img {
 }
 
 .icon-send {
-  position: absolute;
-  right: 24px;
-  top: 50%;
-  transform: translateY(-50%);
   fill: #fff;
+  margin-left: auto;
 }
 
 .form-button {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
